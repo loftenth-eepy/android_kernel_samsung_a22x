@@ -3006,7 +3006,7 @@ uint32_t nicQmUpdateWmmParms(IN struct ADAPTER *prAdapter,
 			     IN uint8_t ucBssIndex)
 {
 	struct BSS_INFO *prBssInfo;
-	struct CMD_UPDATE_WMM_PARMS rCmdUpdateWmmParms = {0};
+	struct CMD_UPDATE_WMM_PARMS rCmdUpdateWmmParms = {};
 	struct mt66xx_chip_info *prChipInfo;
 	uint32_t u4TxHifRes = 0, u4Idx = 0;
 
