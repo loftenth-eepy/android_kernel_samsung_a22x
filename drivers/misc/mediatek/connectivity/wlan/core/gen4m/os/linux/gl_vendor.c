@@ -1361,7 +1361,7 @@ int mtk_cfg80211_vendor_llstats_get_info(struct wiphy *wiphy,
 	union {
 		struct CMD_GET_STATS_LLS cmd;
 		struct EVENT_STATS_LLS_DATA data;
-	} query = {0};
+	} query = {};
 
 	uint32_t u4QueryBufLen = sizeof(query);
 	uint32_t u4QueryInfoLen = sizeof(query.cmd);

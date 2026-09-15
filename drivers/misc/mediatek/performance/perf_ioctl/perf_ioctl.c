@@ -326,7 +326,7 @@ static long earasys_ioctl(struct file *filp,
 	ssize_t ret = 0;
 	struct _EARA_SYS_PACKAGE *msgKM = NULL;
 	struct _EARA_SYS_PACKAGE *msgUM = (struct _EARA_SYS_PACKAGE *)arg;
-	struct _EARA_SYS_PACKAGE smsgKM = {0};
+	struct _EARA_SYS_PACKAGE smsgKM = {};
 
 	msgKM = &smsgKM;
 
