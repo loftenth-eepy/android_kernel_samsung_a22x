@@ -380,9 +380,9 @@ static void mtk_atomic_disp_rsz_roi(struct drm_device *dev,
 	struct drm_crtc_state *old_crtc_state;
 	int i;
 	struct mtk_rect dst_layer_roi = {0};
-	struct mtk_rect dst_total_roi[MAX_CRTC] = {0};
+	struct mtk_rect dst_total_roi[MAX_CRTC] = {{0}};
 	struct mtk_rect src_layer_roi = {0};
-	struct mtk_rect src_total_roi[MAX_CRTC] = {0};
+	struct mtk_rect src_total_roi[MAX_CRTC] = {{0}};
 	bool rsz_enable[MAX_CRTC] = {false};
 	struct mtk_plane_comp_state comp_state[MAX_CRTC][OVL_LAYER_NR];
 
