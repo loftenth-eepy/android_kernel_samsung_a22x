@@ -523,7 +523,7 @@ static uint32_t wlanGetTxRateFromLinkStats(
 	union {
 		struct CMD_GET_STATS_LLS cmd;
 		struct EVENT_STATS_LLS_TX_RATE_INFO rate_info;
-	} query = {0};
+	} query = {};
 	uint32_t u4QueryBufLen;
 	uint32_t u4QueryInfoLen;
 	struct _STATS_LLS_TX_RATE_INFO targetRateInfo;
