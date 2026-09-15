@@ -1,3 +1,7 @@
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/debug_utility
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/include
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/linux/include
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/include
 ###############################################################################
 # Necessary Check
 

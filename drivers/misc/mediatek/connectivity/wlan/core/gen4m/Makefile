@@ -1,3 +1,7 @@
+subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/include
+subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/linux/include
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/include
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/common/common_main/include
 ifeq ($(CONFIG_MTK_PLATFORM),)
 	CONFIG_MTK_PLATFORM := mt$(WLAN_CHIP_ID)
 endif
