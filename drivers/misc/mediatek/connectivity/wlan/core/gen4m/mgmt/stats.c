@@ -1347,7 +1347,7 @@ statsCgsAirLatHdlr(struct GLUE_INFO *prGlueInfo,
 	union {
 		struct CMD_GET_STATS_LLS cmd;
 		struct EVENT_STATS_LLS_TX_LATENCY latency;
-	} query = {0};
+	} query = {};
 	uint32_t u4QueryBufLen;
 	uint32_t u4QueryInfoLen;
 	uint32_t rStatus = WLAN_STATUS_SUCCESS;
